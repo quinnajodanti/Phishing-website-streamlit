@@ -18,7 +18,7 @@ from PIL import Image
 #phish_model_ls = joblib.load(phish_model)
 #loading the model
 
-loaded_model = pickle.load(open('D:/Downloads/Phishing Site URLs Prediction/phishing.pkl','rb'))
+loaded_model = pickle.load(open('phishing.pkl','rb'))
 # ML Aspect
 #@app.get('/predict/{feature}')
 def predict(features):
@@ -39,11 +39,11 @@ def main():
     #giving title
     st.title('Phishing Site Predicting App')
     #getting input from user
-    image = Image.open('D:\Downloads\Phishing Site URLs Prediction/phishing image for streamlit.jpg')
+    image = Image.open('phishing image for streamlit.jpg')
 
     st.image(image, caption='Phishing Detection')
     #st.sidebar.title('Some tips')
-    sidebar_image = Image.open('D:\Downloads\Phishing Site URLs Prediction\Data_security.jpg')
+    sidebar_image = Image.open('Data_security.jpg')
     st.sidebar.image(sidebar_image ,use_column_width=True)
     st.sidebar.header('How to protect your computer')
     st.sidebar.write('Below are some key steps to protecting your computer from intrusion:')
