@@ -4,7 +4,6 @@ Created on Mon Dec 27 14:52:44 2021
 
 @author: Hp
 """
-import numpy as np
 import pickle
 import streamlit as st
 from PIL import Image
